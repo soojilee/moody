@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface CreateHungryViewController : UIViewController
-- (IBAction)createHunger:(id)sender;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+- (void)queryColors;
 @end
